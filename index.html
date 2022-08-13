@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Angular AtomSpace 22 #3</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,500;0,800;1,200;1,300;1,500;1,800&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Exo 2', sans-serif;
+            }
+
+            .container {
+                max-width: 1200px;
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                color: #09502f;
+            }
+
+
+            .top_title {
+                margin-top: 2rem;
+            }
+
+            .top_subtitle {
+                font-size: 0.75rem;
+            }
+
+            .subs_container {
+                margin-top: 2rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                display: flex;
+                justify-content: space-evenly;
+                gap: 2rem;
+                /* flex-flow: row wrap; */
+            }
+
+            .plan {
+                flex: 1 1 100%;
+                text-align: center;
+                background: #f6fdfe;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                /* padding-top: 1rem;
+                padding-bottom: 1rem; */
+                border-radius: 8px;
+                border: 1px solid #eaf2fa;
+            }
+
+
+            .free_plan {
+                color: rgb(87, 142, 6);
+            }
+
+            .pro_plan {
+                color: rgb(0, 81, 255);
+            }
+
+            .premium_plan {
+                color: orange;
+            }
+
+
+            .plan_title {
+                font-size: 0.65rem;
+                text-transform: uppercase;
+            }
+
+            .buy_section {
+                background: white;
+                margin: 0.5rem;
+                padding: 0.5rem 0.5rem 0.75rem;
+                border: 1px solid #eaf2fa;
+                border-radius: 8px;
+            }
+
+            .price {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            .list_menu {
+                font-size: 0.5rem;
+                text-align: left;
+                margin: 1rem 1rem 0;
+            }
+
+            .list_menu-title {
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .btn_container {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            .buy_btn {
+                margin: 0.5rem auto;
+                border: 0;
+                width: 150px;
+                background: grey;
+                color: white;
+                padding: 0.5rem;
+                font-size: 0.5rem;
+                text-transform: capitalize;
+                border-radius: 4px;
+            }
+            
+
+            .hint {
+                font-size: 0.5rem;
+                line-height: 0;
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+
+            .list_menu-title {
+                text-align: left;
+            }
+
+            .free_btn {
+                background: rgb(87, 142, 6);
+            }
+
+            .pro_btn {
+                background: rgb(0, 81, 255);
+            }
+
+            .premium_btn {
+                background: orange;
+            }
+
+            .compare_btn {
+                background: #eaf2fa;
+                color: #09502f;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="top_title">Купите нашу подписку!</h2>
+            <p class="top_subtitle">Вы удивитесь, как много мы можем вам предложить!</p>
+            <div class="subs_container">
+                <div class="plan free_plan">
+                    <p class="plan_title">Free</p>
+                    <div class="buy_section">
+                        <div class="price">0$</div>
+                        <button class="buy_btn free_btn">Активировать</button>
+                        <!-- <p class="hint">есть пробный период!</p> -->
+                    </div>
+                        <div class="list_menu">
+                            <div class="list_menu-title">Free план:</div>
+                            <p>✅ Вы всё делаете сами! 😍</p>
+                            <p>✅ Вам будет что кушать! 🍔</p>
+                            <p>🚫 У вас ничего не получится! 😧</p>
+                            <p>🚫 Мы не скажем Вам "Спасибо" 😭</p>
+                        </div>
+                </div>
+                <div class="plan pro_plan">
+                    <p class="plan_title">Pro</p>
+                    <div class="buy_section">
+                        <div class="price">5$</div>
+                        <button class="buy_btn pro_btn">купить сейчас</button>
+                        <p class="hint">есть пробный период!</p>
+                    </div>
+                        <div class="list_menu">
+                            <div class="list_menu-title">Pro план:</div>
+                            <p>✅ Вы всё делаете сами! 😍</p>
+                            <p>✅ У вас всё получится! 😎</p>
+                            <p>✅ Мы скажем Вам "Спасибо" 🤝</p>
+                            <p>🚫 Будет сложно! 🤔</p>
+                        </div>
+                </div>
+                <div class="plan premium_plan">
+                    <p class="plan_title">Premium</p>
+                    <div class="buy_section">
+                        <div class="price">10$</div>
+                        <button class="buy_btn premium_btn">купить сейчас</button>
+                        <p class="hint">есть пробный период!</p>
+                    </div>
+                        <div class="list_menu">
+                            <div class="list_menu-title">Premium план:</div>
+                            <p>✅ Мы всё сделаем за Вас! 😍</p>
+                            <p>✅ У вас всё получится! 😎</p>
+                            <p>✅ Мы скажем Вам "Спасибо" 😘</p>
+                            <p>✅ Сложно не будет! 😃</p>
+                        </div>
+                </div>
+            </div>
+    
+            <div class="btn_container">
+                <button class="buy_btn compare_btn">сравнить планы</button>
+            </div>
+        </div>
+    </body>
+</html>
